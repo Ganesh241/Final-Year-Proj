@@ -1,0 +1,80 @@
+* {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+}
+
+.container {
+    margin-top: 10%;
+    justify-content: center;
+    max-width: 35%;
+    /* margin: auto; */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+/* .container h2 {
+    text-align: center;
+} */
+
+.form-group12 {
+    /* margin-bottom: 15px; */
+    margin: 0;
+}
+
+.form-group12 label {
+    display: block;
+    margin-bottom: 1%;
+}
+
+.form-group12 input[type="text"],
+.form-group12 input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group12 button {
+    display: block;
+    /* width: 80%; */
+    padding: 10px;
+    /* background-color: #4caf50; */
+    /* color: #fff; */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* .form-group12 button:hover {
+    background-color: #45a049;
+} */
+.inline_block {
+    display: flex;
+    /* max-width: fit-content; */
+    /* justify-content: right; */
+}
+
+.in {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.inline_block p {
+    /* justify-content: right; */
+    display: flex;
+    margin: 1px;
+}
+
+#signup1 {
+    margin-top: 2.1%;
+}
+
+#signuplink {
+    margin-top: 17.2%;
+}

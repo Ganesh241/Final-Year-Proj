@@ -1,0 +1,49 @@
+
+<div class="container">
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group12">
+            <label for="username">Username:</label>
+            <input type="text"
+            id="username"
+            placeholder="Enter your username" 
+            ngModel
+            name="username" 
+            ngModel
+             
+            required>
+            <!-- <span class="help-block"
+               *ngIf="username.touched">Please enter username</span> -->
+        </div>
+        <br>
+        <div class="form-group12">
+            <label for="password">Password:</label>
+            <input type="password"
+            id="password"
+            placeholder="Enter your password" 
+            ngModel
+            name="password"
+            ngModel
+            required>
+            <!-- <span class="help-block"
+               *ngIf="password.touched">Please enter password</span> -->
+        </div>
+        <br>
+        <div class="inline_block">
+            <div class="inline_block" class="form-group12">
+                <button type="submit"
+                [disabled]="f.invalid">Login</button>
+            </div>
+            <div class="in">
+                <p id="signup1">Don't have an account? &nbsp;</p>
+                <a routerLink="/register"><p id="signuplink">Sign up</p></a>
+            </div>
+            <!-- <div class="home" *ngIf="isLoggedIn">
+                <a routerLink="/home"></a>
+            </div> -->
+        </div>
+    </form>
+    <br>
+    <br>
+    <!-- <button (click)="getId()">Hello</button> -->
+</div>

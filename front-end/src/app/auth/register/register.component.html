@@ -1,0 +1,123 @@
+<div *ngIf="s==1" class="alert alert-success" role="alert">
+    You are successfully regiestered.
+</div>
+  <div class="container">
+    <h2>Register</h2>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="form-group" id="name">
+        <label for="name">Enter Name:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter your Name"
+          name="name"
+          ngModel
+          required
+        />
+      </div>
+      <br />
+      <div class="form-group" id="uname">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="username"
+          placeholder="Enter your username"
+          name="userName"
+          ngModel
+          required
+        />
+      </div>
+      <br />
+      <div class="form-group" id="email">
+        <label for="userEmail">Email:</label>
+        <input
+          type="email"
+          id="userEmail"
+          class="form-control"
+          placeholder="Enter your email address"
+          name="userEmail"
+          ngModel
+          #email="ngModel"
+          required
+        />
+      </div>
+      <br />
+      <div class="form-group" id="pass">
+        <label for="userPassword">Password:</label>
+        <input
+          type="password"
+          id="userPassword"
+          class="form-control"
+          name="userPass"
+          ngModel
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+      <br />
+      <div class="form-group" id="prof">
+        <label for="userProf">Profession</label>
+        <input
+          type="text"
+          id="userProf"
+          class="form-control"
+          name="userProf"
+          ngModel
+          placeholder="Enter your profession"
+          required
+        />
+      </div>
+      <br />
+      <div class="form-group" id="age">
+        <label for="userAge">Age</label>
+        <input
+          type="number"
+          id="userAge"
+          class="form-control"
+          name="userAge"
+          ngModel
+          placeholder="Enter your Age"
+          required
+        />
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <div class="radio" *ngFor="let g of genders">
+          <!-- <label> -->
+          <input type="radio" name="gender" required ngModel [value]="g" id="gen"/>
+          {{ g }}
+          <!-- </label> -->
+        </div>
+      </div>
+      <br />
+      <div class="inline_block">
+        <div class="inline_block" class="form-group">
+          <button class="btn btn-success" type="submit" >Register</button>
+        </div>
+        <div class="in">
+          <p>Have an account? &nbsp;</p>
+          <a routerLink="/login">
+            <p>LogIn</p>
+          </a>
+        </div>
+      </div>
+      <!-- <button routerLink="/profile">goto profilt</button> -->
+    </form>
+  </div>
+  
+  
+  <!-- <div class="entered">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Entered Data</h3>
+        <p>Username: {{ userData.name }}</p>
+        <p>Email: {{ userData.userEmail }}</p>
+        <p>Secret: {{ userData.userPass }}</p>
+        <p>Gender: {{ userData.gender }}</p>
+      </div>
+    </div>
+  </div> -->
+  

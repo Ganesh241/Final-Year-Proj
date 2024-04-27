@@ -1,0 +1,35 @@
+<div class="main-div">
+
+  <div class="topnav">
+
+    <a routerLink="/home" class="active">Home</a>
+    <!-- <a routerLink="/contact-us">Contact</a> -->
+    <a routerLink="/about-page">About</a>
+
+    <span class="connect">
+      <a routerLink="/create-blog">
+        <p id="navItem">Write Blog</p>
+      </a>
+      <a routerLink="/profile">
+        <p id="navItem">Profile</p>
+      </a><br>
+    </span>
+  </div>
+
+
+  <div class="container1">
+    <div class="blog-list-div">
+      <app-blogs-list [page]="p" [tag]="clickedTag"></app-blogs-list>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item" (click)="prevPage()"><a class="page-link">Previous</a></li>
+          <li class="page-item" (click)="nextPage()"><a class="page-link">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="blog-tags-div">
+      <app-sidebar (childEvent)="sendTag($event)"></app-sidebar>
+    </div>
+  </div>
+
+</div>

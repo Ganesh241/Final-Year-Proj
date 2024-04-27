@@ -1,0 +1,26 @@
+.tagsc {
+  display: flex;
+  flex-wrap: wrap; 
+  padding: 2% 2% 2% 2%;
+  justify-content: flex-start;
+  /* border: 1px dotted black; */
+  margin: auto;
+  border-radius: 15px; 
+  
+}
+.tag-div{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags-title{
+  margin-left: 3%;
+}
+.tag {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+}
+  

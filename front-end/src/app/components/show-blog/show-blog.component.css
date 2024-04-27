@@ -1,0 +1,119 @@
+@import "/node_modules/font-awesome/css/font-awesome.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.AllBlog {
+  /* display: grid; */
+  margin-top: 1%;
+  width: 50%;
+  /* width: 682px; */
+  /* margin-left: 20%; */
+  /* border: 1px solid black; */
+}
+
+.main-div {
+  background-color: #e7e2e2;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  margin: 0;
+  padding: 0;
+  max-height: fit-content;
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  color: #e7e2e2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+.connect {
+  max-height: fit-content;
+  float: right;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-right: 2%;
+}
+#navItem {
+  margin: 0;
+  padding: 0;
+}
+
+.data-title {
+  /* box-shadow: 0px 0px 5px gray; */
+  margin: 0;
+  /* border-left: none; */
+  /* border: 1px solid black; */
+  /* width: 90%; */
+  padding-top: 1%;
+  /* padding-left: 3%;  */
+  padding-bottom: 1%;
+}
+
+.data-title hr {
+  box-shadow: 0px 1px 1px gray;
+}
+
+.num span {
+  font-size: 16px;
+  /* width: 1px; */
+}
+
+:host /deep/ angular-editor#edi .angular-editor-textarea {
+  border: none;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 5px gray;
+  resize: none;
+  padding-top: 3%;
+  padding-left: 3.9%;
+}
+
+.red-heart {
+  color: red;
+}
+/* :host /deep/ .angular-editor-textarea:hover{
+    border: none;
+    transition-delay: -2s;
+    box-shadow: 0px 0px 10px gray;
+    transition-delay: 200ms;
+    transition-property: box-shadow;
+} */
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.likes {
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+:host /deep/ .angular-editor-wrapper img {
+  max-width: 50%;
+}
+
+.main-container {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

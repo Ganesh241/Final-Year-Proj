@@ -1,0 +1,11 @@
+<h2>Comments</h2>
+<div *ngFor="let comment of comments">
+  <strong>{{ comment.name }}</strong>: {{ comment.comment }} &nbsp; {{comment.date}}
+</div>
+<!-- <button (click)="getComment()">Get Comment</button> -->
+<hr />
+<div *ngIf="isLoggedIn">
+  <textarea [(ngModel)]="newCommentText"></textarea>
+  <br />
+  <button (click)="addComment()">Add Comment</button>
+</div>
